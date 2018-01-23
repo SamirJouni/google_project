@@ -27,8 +27,12 @@ a {
 a:hover, a:visited {
 	color: inherit;
 	text-decoration: underline;
-
 }
+
+a:active {
+	color: red;
+}
+
 .top-menu {
 	display: flex;
 	justify-content: flex-end;
@@ -59,14 +63,29 @@ nav div {
     text-align: center;
 }
 
+.search-box {
+	position: relative;
+}
+
 .search-box, .search-input {
-	width: 90%;
+	width: 98%;
+}
+
+.voice-search {
+	position: absolute;
+  	right: 0px;
+}
+
+.voice-search img {
+	padding: 10px 10px;
+	cursor: pointer;
 }
 
 .search-input {
 	height: 44px;
 	padding: 0px 15px;
 	border: none;
+	padding-right: 0px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
@@ -89,6 +108,7 @@ input[type="submit"] {
 	margin: 11px 4px;
 	min-width: 54px;
 	line-height: 27px;
+	cursor: pointer;
 }
 
 input[type="submit"]:hover {
