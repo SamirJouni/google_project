@@ -7,61 +7,64 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body>
-    <div>
-      <nav>
-        <div>
-          <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
-        </div>
-        <div>
-          <a href="https://images.google.com/">Images</a>
-        </div>
-        <div>
-          <a href="https://www.google.de/intl/en/options/">Google apps</a>
-        </div>
-        <div>
-            <a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.de%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</a>
-        </div>
-      </nav>
-    </div>
-    <div>
-      <div>
-        <img src="https://www.google.de/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Banner">
-      </div>
-      <div>
-        <form method="get">
+    <div class="view">
+      <div class="top-menu">
+        <nav>
           <div>
-          <input type="text" name="Search">
+            <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
           </div>
           <div>
-            <input type="submit" name="Google Search" value="Google Search">
-            <input type="submit" name="I'm Feeling Lucky" value="I'm Feeling Lucky">
+            <a href="https://images.google.com/">Images</a>
           </div>
-        </form>
+          <div>
+            <a href="https://www.google.de/intl/en/options/" class="apps">
+              <img src="https://image.ibb.co/jtEYZG/keyboard_buttons_or_visualization_button_of_nine_squares.png" width="15">
+            </a>
+          </div>
+          <div>
+              <a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.de%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</a>
+          </div>
+        </nav>
       </div>
-      <div>
-        <span>Google offered in: </span>
-        <a href="https://www.google.de/setprefs?sig=0_maEBN8Ewp6_mwuR54XpVXbEg5Ec%3D&hl=de&source=homepage&sa=X&ved=0ahUKEwjjnsXi4evYAhUNKewKHWVjDfAQ2ZgBCAk">Deutsch</a>
-      </div>
-    </div>
-    <footer>
-      <div>
-        <span>Germany</span>
-      </div>
-      <div>
+      <div class="google-search">
+        <div class="m-b-25">
+          <img src="https://www.google.de/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Banner" height="92" width="272">
+        </div>
         <div>
-          <span>
+          <form method="get">
+            <div class="search-box">
+              <span class="voice-search"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC" height=25></span>
+              <input type="text" class="search-input" name="Search">
+            </div>
+            <div class="search-actions">
+              <input type="submit" name="Google Search" value="Google Search">
+              <input type="submit" name="I'm Feeling Lucky" value="I'm Feeling Lucky">
+            </div>
+          </form>
+        </div>
+        <div class="m-t-12">
+          <span>Google offered in: </span>
+          <a href="https://www.google.de/" class="google-lang">Deutsch</a>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-location">
+          <span>Germany</span>
+        </div>
+        <div class="footer-links">
+          <div>
             <a href="https://www.google.de/intl/en_us/ads/">Advertising</a>
-            <a href="https://www.google.com/intl/en/services/">Business</a>
-            <a href="https://www.google.de/intl/en_de/about/">About</a>
-          </span>
-          <span>
-            <a href="https://www.google.de/intl/en_de/policies/privacy/">Privacy</a>
-            <a href="https://www.google.de/intl/en_de/policies/terms/regional.html">Terms</a>
-            <a href="#">Settings</a>
-            <a href="https://www.google.com/">Use Google.com</a>
-          </span>
+            <a href="https://www.google.com/intl/en/services/" class="p-l-27">Business</a>
+            <a href="https://www.google.de/intl/en_de/about/" class="p-l-27">About</a>
+          </div>
+          <div>
+            <a href="https://www.google.de/intl/en_de/policies/privacy/" class="p-l-27">Privacy</a>
+            <a href="https://www.google.de/intl/en_de/policies/terms/regional.html" class="p-l-27">Terms</a>
+            <a href="#" class="p-l-27">Settings</a>
+            <a href="https://www.google.com/" class="p-l-27">Use Google.com</a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
