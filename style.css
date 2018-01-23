@@ -43,9 +43,42 @@ a:active {
 	color: rgba(0,0,0,0.87);
 }
 
+.apps {
+ width: 30px;
+ height: 30px;
+ background-image: url('//ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+ background-position: -132px -38px;
+ background-size: 528px 68px;
+ opacity: .55;
+ position: relative;
+ top: 3px;
+}
+
+.apps:hover {
+ opacity: .85;
+}
+
 nav div {
 	padding-left: 15px;
 	display: inline-block;
+}
+
+nav div:last-child a {
+	background: #4285f4;
+	border: 1px solid #4285f4;
+	color: white;
+	font-weight: bold;
+	line-height: 28px;
+	padding: 0 12px;
+	border-radius: 2px;
+	display: inline-block;
+	cursor: default;
+	opacity: 1;
+}
+
+nav div:last-child a:hover {
+	text-decoration: none;
+	box-shadow: 0 1px 0 rgba(0,0,0,.15);
 }
 
 .view {
@@ -68,12 +101,48 @@ nav div {
 }
 
 .search-box, .search-input {
-	width: 98%;
+	width: 90%;
 }
 
 .voice-search {
 	position: absolute;
+	display: inline-block;
   	right: 0px;
+  	z-index: 1;
+}
+
+
+.voice-search .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: rgba(0,0,0,0.80);
+    color: #fff;
+    text-align: center;
+    padding: 7px 0;
+    border: 1px solid white;
+    right: -30px;
+    font-weight: bold;
+    font-size: 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltiptext:after {
+	content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0,0,0,0.80) transparent;
+    box-shadow: box-shadow: 0 1px 1px rgba(0,0,0,0.7);
+}
+
+.voice-search:hover .tooltiptext {
+    visibility: visible;
 }
 
 .voice-search img {
@@ -82,6 +151,8 @@ nav div {
 }
 
 .search-input {
+	position: relative;
+    left: 20px;
 	height: 44px;
 	padding: 0px 15px;
 	border: none;
